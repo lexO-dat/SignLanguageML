@@ -1,5 +1,5 @@
 # SignLanguageML
-Este proyecto consiste en un prototipo funcional para el reconocimiento de letras en tiempo real utilizando una Raspberry Pi, tensorflow y un ESP32.
+Este proyecto consiste en un prototipo funcional para el reconocimiento de letras en en lenguaje de señas y en tiempo real utilizando una Raspberry Pi, tensorflow y un ESP32.
 
 1. **Entrenamiento del Modelo**: `train.py`
 2. **Transformacion del modelo** `tolite.py`
