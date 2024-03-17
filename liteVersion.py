@@ -20,7 +20,7 @@ input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 
 # URL de la cámara
-esp32_url = "http://192.168.0.5:4747/video"
+esp32_url = "http://192.168.4.2/"
 
 # Inicializar la captura de la cámara
 cap = cv2.VideoCapture(0)
