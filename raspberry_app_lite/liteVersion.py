@@ -10,7 +10,7 @@ import requests
 #engine = pyttsx3.init()
 
 def enviar_letra(letra):
-    url = "http://localhost:3000/letra"
+    url = "https://tics-api.onrender.com/letra"
     payload = {'letra': letra}
     try:
         requests.put(url, json=payload)
