@@ -1,1 +1,3 @@
-./backend/node_modules/
+# Ignorar la carpeta node_modules dentro de la carpeta backend
+*/backend/node_modules/
+*/data/

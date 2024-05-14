@@ -5,9 +5,9 @@ import numpy as np
 import math
 import time
 import requests
-import pyttsx3
+#import pyttsx3
 
-engine = pyttsx3.init()
+#engine = pyttsx3.init()
 
 def enviar_letra(letra):
     url = "http://localhost:3000/letra"
@@ -17,7 +17,6 @@ def enviar_letra(letra):
     except requests.exceptions.RequestException as e:
         print("Error al enviar la letra:", e)
 
-# Configuración del programa principal
 interpreter = tf.lite.Interpreter(model_path="../Model/model_hg.tflite")
 interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
@@ -37,6 +36,7 @@ previous_letter = None
 labels = ["h", "g"]
 
 while True:
+    #enable for the raspberry
     #cap.open(esp32_url)
 
     success, img = cap.read()
@@ -91,8 +91,8 @@ while True:
                     prev_letter = current_letter
                     print("LA LETRA ES:", current_letter)
                     if(current_letter == "next"):
-                        engine.say(word)
-                        engine.runAndWait()
+                        #engine.say(word)
+                        #engine.runAndWait()
                         word = ""
                     else:
                         word = word + current_letter
